@@ -1,38 +1,86 @@
-.App {
-  text-align: center;
+.background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #0B2434;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.board {
+    position: absolute;
+    width: 90%;
+    height: 80%;
+    left: 5%;
+    top: 10%;
+    background: #F5F5F5;
+    border-radius: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.playarea {
+    font-family: 'Poppins';
+    position: absolute;
+    overflow: scroll;
+    width: 90%;
+    height: 90%;
+    top: 5%;
+    left: 5%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.playarea h1 {
+    text-align: center;
+    color: #2B283A;
 }
 
-.App-link {
-  color: #61dafb;
+.playarea p {
+    text-align: center;
+    color: #4A4E74;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.playarea .roll button {
+    font-family: 'Poppins';
+    width: 100px;
+    cursor: pointer;
+    margin: 0 auto;
+    display: block;
+    height: 40px;
+    color: #FFFFFF;
+    background: #5035FF;
+    box-shadow: 0px 3.2px 7.68px rgba(0, 0, 0, 0.18);
+    border-radius: 3.81277px;
+}
+
+.playarea .roll {
+    display: block;
+    margin: 5% auto;
+}
+
+.playarea .numbers {
+    width: 75%;
+    margin: auto;
+}
+
+.playarea .numbers .number-box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.playarea .numbers .number-box > .box {
+    padding: 2%;
+    margin: 2%;
+    flex: 1 0 12%;
+    text-align: center;
+    cursor: pointer;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+    border-radius: 3.81277px;
+}
+
+.playarea .numbers .number-box > .box-set {
+    padding: 2%;
+    margin: 2%;
+    flex: 1 0 12%;
+    text-align: center;
+    background: #59E391;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+    border-radius: 3.81277px;
 }
