@@ -1,7 +1,7 @@
 {
   "name": "tenzies",
   "version": "0.1.0",
-  "homepage": "https://one-see.github.io",
+  "homepage": "https://one-see.github.io/tenzies",
   "private": true,
   "dependencies": {
     "@react-hook/window-size": "^3.0.7",
